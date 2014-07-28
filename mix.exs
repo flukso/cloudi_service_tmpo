@@ -2,7 +2,7 @@ defmodule CloudiServiceTmpo.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :cloudi_service_tmpo,
+    [app: :Elixir.CloudiServiceTmpo,
      version: "0.0.1",
      elixir: "~> 0.14.3",
      deps: deps]

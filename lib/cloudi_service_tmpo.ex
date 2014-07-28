@@ -10,7 +10,8 @@ defmodule CloudiServiceTmpo do
   end
 
   def cloudi_service_handle_info(request, state, _) do
-    :cloudi_logger_interface.warn('Unknown info \"~p\"', [request])
+    :cloudi_logger_interface.warn(__MODULE__, __ENV__.line,
+                                  'Unknown info \"~p\"', [request])
     {:noreply, state}
   end
 
